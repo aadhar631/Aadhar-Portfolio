@@ -54,6 +54,7 @@ form.addEventListener('submit', e => {
             msg.innerHTML = "";
         }, 2000)
         form.reset();
+        sendMail();
     })
     .catch(error => console.error('Error!', error.message))
 })
@@ -72,6 +73,6 @@ function sendMail(params) {
         Subject : "Aadhar Portfolio",
         Body : "Name :- " + document.getElementById('name').value + "<br/>" + "Regarding :- " + document.getElementById('subject').value + "<br/>" + "Message :- " + document.getElementById('message').value
     }).then(
-      message => alert(message)
+        message => alert(message)
     );
 }

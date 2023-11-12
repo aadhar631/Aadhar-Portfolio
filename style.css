@@ -57,6 +57,11 @@ nav{
     padding: 10px 10%;
 }
 
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
 .logo {
     font-size: 40px;
 }
@@ -103,6 +108,7 @@ nav ul li a:hover::after {
 }
 
 .header-text {
+    width: 55%;
     margin-top: 10%;
     font-size: 3rem;
 }
@@ -357,7 +363,6 @@ span {
 }
 
 .skills-list div a {
-    text-decoration: none;
     color: var(--text-color);
     font-size: 1.5rem;
     margin-top: 2rem;
@@ -429,13 +434,13 @@ span {
     width: 30rem;
     height: 50rem;
     overflow: hidden;
-    /* overflow: hidden; */
 }
 
 .project img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    background-color: var(--second-bg-color);
+    object-fit: contain;
     border-radius: 10px;
     display: block;
     transition: .5s;
@@ -460,7 +465,7 @@ span {
 }
 
 .layer h3 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
@@ -863,6 +868,9 @@ nav .fas {
 
 
 @media (max-width:690px) {
+    #header .container {
+        padding-top: 2rem;
+    }
     .header-text h1 {
         font-size: 3rem;
     }
@@ -882,8 +890,6 @@ nav .fas {
 /* media query for about section  */
 
 @media (max-width: 490px) {
-
-
     #header .btn-box .btn{
         width: 10rem;
         height: 4rem;
@@ -913,6 +919,7 @@ nav .fas {
 
 
 @media (max-width: 390px) {
+
     .about-col-2 h1{
         font-size: 4rem;
     }
