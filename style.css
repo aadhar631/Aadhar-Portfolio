@@ -812,13 +812,13 @@ nav .fas {
     #check:checked ~ .menu-btn #one-btn {
         display: none;
     }
-    #check:checked ~ .menu-btn #two-btn{
+    #check:checked ~ .menu-btn #two-btn {
         display: block;
         position: absolute;
         right: 5rem;
         top: 2rem;
         z-index: 99;
-    }
+    }    
     
 }
 
@@ -873,7 +873,7 @@ nav .fas {
 
 @media (max-width:690px) {
     #header .container {
-        padding-top: 2rem;
+        padding-top: 6rem;
     }
     .header-text h1 {
         font-size: 3rem;
@@ -897,6 +897,9 @@ nav .fas {
     #header .btn-box .btn{
         width: 10rem;
         height: 4rem;
+    }
+    #header .container {
+        padding-top: 10rem;
     }
     .about-col-2 {
         width: 100%;
