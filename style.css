@@ -68,13 +68,13 @@ nav a {
     font-size: 40px;
 }
 
-nav ul li {
+#sidemenu li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
 
-nav ul li a{
+#sidemenu li a{
     text-decoration: none;
     color: var(--text-color);
     font-size: 18px;
@@ -82,11 +82,11 @@ nav ul li a{
     position: relative;
 }
 
-nav ul li a:hover {
+#sidemenu li a:hover {
     color: var(--main-color);
 }
 
-nav ul li a::after {
+#sidemenu li a::after {
     content: '';
     left: 0;
     bottom: -6px;
@@ -97,7 +97,7 @@ nav ul li a::after {
     transition: width .3s ease-in-out;
 }
 
-nav ul li a:hover::after {
+#sidemenu li a:hover::after {
     width: 100%;
 }
 
