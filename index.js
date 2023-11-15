@@ -67,12 +67,10 @@ function sendMail(params) {
     Email.send({
         Host : "smtp.elasticemail.com",
         Username : "vanshjain1820@gmail.com",
-        Password : "1BC912BB28F9C06F5B0407DF53303DABF740",
+        Password : "1BC912BB28F9C06F5B0407DF53653DABF740",
         To : 'vanshjain1820@gmail.com',
         From : document.getElementById('email').value,
         Subject : "Aadhar Portfolio",
         Body : "Name :- " + document.getElementById('name').value + "<br/>" + "Regarding :- " + document.getElementById('subject').value + "<br/>" + "Message :- " + document.getElementById('message').value
-    }).then(
-        message => alert(message)
-    );
+    })
 }

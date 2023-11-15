@@ -1,332 +1,497 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aadhar Portfolio</title>
-    <link rel="website icon" href="/images/about.png" type="png">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aadhar Portfolio</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="website icon" href="/images/about.png" type="png" />
 
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("user_2TdPbcRhevhQDIGBqaPfM");
-        })();
-    </script> -->
-
-
-</head>
-<body>
-
-
-    <nav>
+        <link rel="stylesheet" href="style.css" />
+        <link
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+        rel="stylesheet"
+        />
+        <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                emailjs.init("user_2TdPbcRhevhQDIGBqaPfM");
+            })();
+        </script> -->
+    </head>
+    <body>
+        <nav data-aos="fade-down" data-aos-duration="1000">
         <!-- <img src="#" class="logo" alt=""> -->
-        <a href="#header"><h1 class="logo">Aadhar.</h1></a>
+        <a href="#header"><h1 class="logo" data-aos="fade-right" data-aos-delay="600">Aadhar.</h1></a>
 
-        <input type="checkbox" id="check">
+        <input type="checkbox" id="check" />
         <label for="check" class="menu-btn">
-            <i class='bx bx-menu' id="one-btn"></i>
-            <i class='bx bx-x' id="two-btn"></i>
+            <i class="bx bx-menu" id="one-btn"></i>
+            <i class="bx bx-x" id="two-btn"></i>
         </label>
 
         <div class="sidebar">
             <div class="menu">
-            <li><a href="#header"><i class='bx bx-home' ></i><span>Home</span></a></li>
-            <li><a href="#about"><i class='bx bx-user'></i><span>About</span></a></li>
-            <li><a href="#skills"><i class='bx bx-cricket-ball'></i><span>Skills</span></a></li>
-            <li><a href="#projects"><i class='bx bx-slideshow' ></i><span>Projects</span></a></li>
-            <li><a href="#contact"><i class='bx bxs-contact' ></i><span>Contact</span></a></li>
+            <li>
+                <a href="#header"><i class="bx bx-home"></i><span>Home</span></a>
+            </li>
+            <li>
+                <a class="about-tag" href="#about"
+                ><i class="bx bx-user"></i><span>About</span></a
+                >
+            </li>
+            <li>
+                <a href="#skills"
+                ><i class="bx bx-cricket-ball"></i><span>Skills</span></a
+                >
+            </li>
+            <li>
+                <a href="#projects"
+                ><i class="bx bx-slideshow"></i><span>Projects</span></a
+                >
+            </li>
+            <li>
+                <a href="#contact"
+                ><i class="bx bxs-contact"></i><span>Contact</span></a
+                >
+            </li>
             </div>
         </div>
 
         <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#header" data-aos="fade-down" data-aos-delay="800">Home</a></li>
+            <li><a class="about-tag" href="#about" data-aos="fade-up" data-aos-delay="900">About</a></li>
+            <li><a href="#skills" data-aos="fade-down" data-aos-delay="1000">Skills</a></li>
+            <li><a href="#projects" data-aos="fade-up" data-aos-delay="1100">Projects</a></li>
+            <li><a href="#contact" data-aos="fade-down" data-aos-delay="1200">Contact</a></li>
             <i class="fas fa-times" onclick="closemenu()"></i>
         </ul>
         <i class="fas fa-bars" onclick="openmenu()"></i>
-    </nav>
+        </nav>
 
-    <!-- header section design  -->
-    <div id="header">
+        <!-- header section design  -->
+        <div id="header">
         <div class="container">
             <div class="header-text">
-                <h1>Hi I'm Aadhar <span>Jain</span></h1>
-                <h3>Pursuing BTech @ JECRC University</h3>
-                <p>BTech student, web enthusiast, and DSA learner crafting digital experiences.</p>
+            <h1 data-aos="slide-right">Hi I'm Aadhar <span>Jain</span></h1>
+            <h3 data-aos="slide-left">Pursuing BTech @ JECRC University</h3>
+            <p data-aos="zoom-in">
+                BTech student, web enthusiast, and DSA learner crafting digital
+                experiences.
+            </p>
             </div>
 
             <div class="btn-box">
-                <a href="#" class="btn">Hire Me</a>
-                <a href="#" class="btn">Let's Talk</a>
+            <a href="#" class="btn" data-aos="fade-right" data-aos-delay="500"
+                >Let's Talk</a
+            >
+            <a href="#" class="btn" data-aos="fade-left" data-aos-delay="500"
+                >Hire Me</a
+            >
             </div>
         </div>
-    </div>
+        </div>
 
-
-
-
-
-    <!-- about section design  -->
-    <div id="about">
+        <!-- about section design  -->
+        <div id="about">
         <div class="container">
             <div class="row">
-                <div class="about-col-1">
-                    <img src="./images/about.png" alt="">
+            <div class="about-col-1" data-aos="slide-right" data-aos-offset="300">
+                <img src="./images/about.png" alt="" />
+            </div>
+            <div class="about-col-2" data-aos="slide-left" data-aos-offset="300">
+                <h1 class="sub-title">About <span>Me</span></h1>
+                <p data-aos="fade-up" data-aos-delay="300">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+                nulla aliquam tempore tenetur nisi quidem! Ipsum explicabo ea
+                aperiam consequuntur vero veritatis totam, nobis libero soluta
+                dignissimos facilis reiciendis cumque.
+                </p>
+
+                <div class="tab-titles" data-aos="fade-up" data-aos-delay="400">
+                <p class="tab-links active-link" onclick="opentab('education')">
+                    Education
+                </p>
+                <p class="tab-links" onclick="opentab('experience')">
+                    Experience
+                </p>
+                <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
                 </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About <span>Me</span></h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, nulla aliquam tempore tenetur nisi quidem! Ipsum explicabo ea aperiam consequuntur vero veritatis totam, nobis libero soluta dignissimos facilis reiciendis cumque.</p>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
-                    </div>
-
-                    <div class="tab-contents active-content" id="education">
-                        <ul>
-                            <li><span>2018 - 2019</span><br>Emmanuel Mission Secondary School - 77%</li>
-                            <li><span>2020 - 2021</span><br>Adarsh Indian Public School - 79.67%</li>
-                            <li><span>1st sem, 2nd sem, 3rd sem, 4th sem</span><br>9.13, 8.46, 9.20, 8.78</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2023</span><br>Building Web Development Projects</li>
-                            <li><span>2022 - 2024</span><br>Good Knowledge of DSA</li>
-                            <li><span>2025 - 2027</span><br>2 years experience in FAANG</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="hobbies">
-                        <ul>
-                            <li>Dance</li>
-                            <li>Playing Badminton</li>
-                            <li>Trekking</li>
-                        </ul>
-                    </div>
+                <div class="tab-contents active-content" id="education" data-aos="fade-up" data-aos-delay="500">
+                <ul>
+                    <li>
+                    <span>2018 - 2019</span><br />Emmanuel Mission Secondary
+                    School - 77%
+                    </li>
+                    <li>
+                    <span>2020 - 2021</span><br />Adarsh Indian Public School -
+                    79.67%
+                    </li>
+                    <li>
+                    <span>1st sem, 2nd sem, 3rd sem, 4th sem</span><br />9.13,
+                    8.46, 9.20, 8.78
+                    </li>
+                </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                <ul>
+                    <li>
+                    <span>2023</span><br />Building Web Development Projects
+                    </li>
+                    <li><span>2022 - 2024</span><br />Good Knowledge of DSA</li>
+                    <li>
+                    <span>2025 - 2027</span><br />2 years experience in FAANG
+                    </li>
+                </ul>
+                </div>
+                <div class="tab-contents" id="hobbies">
+                <ul>
+                    <li>Dance</li>
+                    <li>Playing Badminton</li>
+                    <li>Trekking</li>
+                </ul>
                 </div>
             </div>
-        </div>
-    </div>
-
-
-
-
-
-
-    <!-- skills section design  -->
-    <div id="skills">
-        <div class="container">
-            <h1>My <span>Skills</span></h1>
-
-            <div class="skills-list">
-                <div>
-                    <i class="fa-brands fa-codepen"></i>
-                    <h2>Java</h2>
-                    <p>Java is a versatile, object-oriented programming language known for its portability, reliability, and wide applicability.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-codepen"></i>
-                    <h2>HTML CSS Javascript</h2>
-                    <p>HTML structures content, CSS styles it for presentation, and JavaScript adds interactivity for dynamic web experiences.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-codepen"></i>
-                    <h2>ReactJS</h2>
-                    <p>ReactJS is a JavaScript library for building user interfaces, emphasizing component-based architecture for seamless development.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-codepen"></i>
-                    <h2>Node.js</h2>
-                    <p>Node.js is a runtime environment using JavaScript for server-side applications, known for its efficiency and scalability.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-codepen"></i>
-                    <h2>MongoDB</h2>
-                    <p>MongoDB is a NoSQL database, storing data in flexible, JSON-like documents, providing scalability and performance.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-code-compare"></i>
-                    <h2>DSA</h2>
-                    <p>DSA, or Data Structures and Algorithms, are fundamental concepts optimizing problem-solving and efficient software development.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-code-compare"></i>
-                    <h2>Consistency</h2>
-                    <p>Consistency is reliability, uniformity, and stability in behavior or performance, essential for trustworthy outcomes.</p>
-                    <a href="#">Learn more</a>
-                </div>
             </div>
         </div>
-    </div>
+        </div>
 
-
-
-
-
-    <!-- projects section design  -->
-
-    
-    <div id="projects">
+        <!-- skills section design  -->
+        <div id="skills">
         <div class="container">
-            <h1 id="project-title">My <span>Projects</span></h1>
-            <div class="projects-list">
-                <!-- <div>
-                    <video id="videoPlayer" controls>
-                        <source src="/projects/instagramchatapp.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div>
-                    <video id="videoPlayer" controls>
-                        <source src="/projects/instagramchatapp.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div>
-                    <video id="videoPlayer" controls>
-                        <source src="/projects/instagramchatapp.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div>
-                    <video id="videoPlayer" controls>
-                        <source src="/projects/instagramchatapp.mp4" type="video/mp4">
-                    </video>
-                </div> -->
+            <h1
+            data-aos="slide-left"
+            data-aos-duration="4000"
+            data-aos-offset="300"
+            >
+            My <span>Skills</span>
+            </h1>
 
-
-                <div class="project">
-                    <img src="images/project_images/Ultimate Tic Tac Toe.png">
-                    <div class="layer">
-                        <h3>Ultimate Tic Tac Toe</h3>
-                        <p>Check out the detailed journey of this project on my LinkedIn  &darr;</p>
-                        <a href="https://www.linkedin.com/posts/aadhar-jain-243a71299_start-date-10-october-2023-ending-date-activity-7128335334844559360-zDcO?utm_source=share&utm_medium=member_desktop" target="_blank"><i class='bx bx-trending-up'></i></a>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="images/project_images/Chatify App.png">
-                    <div class="layer">
-                        <h3>Chatify App</h3>
-                        <p>Check out the detailed journey of this project on my LinkedIn  &darr;</p>
-                        <a href="https://www.linkedin.com/posts/aadhar-jain-243a71299_start-date-17-may-2023-ending-date-13-activity-7128263311896268801-iH1A?utm_source=share&utm_medium=member_desktop" target="_blank"><i class='bx bx-trending-up'></i></a>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="images/project_images/Expense Tracker App.png">
-                    <div class="layer">
-                        <h3>Expense Tracker App</h3>
-                        <p>Check out the detailed journey of this project on my LinkedIn  &darr;</p>
-                        <a href="https://www.linkedin.com/posts/aadhar-jain-243a71299_start-date-9-april-2023-ending-date-30-activity-7128100352498761728-8mJm?utm_source=share&utm_medium=member_desktop" target="_blank"><i class='bx bx-trending-up'></i></a>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="images/project_images/Registration Form.png">
-                    <div class="layer">
-                        <h3>Registration Form</h3>
-                        <p>Check out the detailed journey of this project on my LinkedIn  &darr;</p>
-                        <a href="#https://www.linkedin.com/posts/aadhar-jain-243a71299_start-date-5-january-2023-ending-date-activity-7128095838362304513-p5IT?utm_source=share&utm_medium=member_desktop" target="_blank"><i class='bx bx-trending-up'></i></a>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="images/project_images/Anime-Pics-Generator.png">
-                    <div class="layer">
-                        <h3>Anime-Pics-Generator</h3>
-                        <p>Check out the detailed journey of this project on my LinkedIn  &darr;</p>
-                        <a href="https://www.linkedin.com/posts/aadhar-jain-243a71299_start-date-16-august-2022-ending-date-activity-7127703218410655745-uB7F?utm_source=share&utm_medium=member_desktop" target="_blank"><i class='bx bx-trending-up'></i></a>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="images/project_images/Notes App.png">
-                    <div class="layer">
-                        <h3>Notes App</h3>
-                        <p>Check out the detailed journey of this project on my LinkedIn  &darr;</p>
-                        <a href="https://www.linkedin.com/posts/aadhar-jain-243a71299_start-date-5-november-2022-ending-date-activity-7127179554724421632-6XSD?utm_source=share&utm_medium=member_desktop" target="_blank"><i class='bx bx-trending-up'></i></a>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="images/project_images/Image Search App.png">
-                    <div class="layer">
-                        <h3>Image Search App</h3>
-                        <p>Check out the detailed journey of this project on my LinkedIn  &darr;</p>
-                        <a href="https://www.linkedin.com/posts/aadhar-jain-243a71299_start-date-26-september-2022-ending-date-activity-7127176019651760128-1Ly-?utm_source=share&utm_medium=member_desktop" target="_blank"><i class='bx bx-trending-up'></i></a>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="images/project_images/Snake Game.png">
-                    <div class="layer">
-                        <h3>Snake Game</h3>
-                        <p>Check out the detailed journey of this project on my LinkedIn  &darr;</p>
-                        <a href="https://www.linkedin.com/posts/aadhar-jain-243a71299_start-date-22-september-2022-ending-date-activity-7127169386452275200-Dv_p?utm_source=share&utm_medium=member_desktop" target="_blank"><i class='bx bx-trending-up'></i></a>
-                    </div>
-                </div>
+            <div class="skills-list" data-aos="fade-right" data-aos-offset="300">
+            <div>
+                <i class="fa-brands fa-codepen"></i>
+                <h2>Java</h2>
+                <p>
+                Java is a versatile, object-oriented programming language known
+                for its portability, reliability, and wide applicability.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-codepen"></i>
+                <h2>HTML CSS Javascript</h2>
+                <p>
+                HTML structures content, CSS styles it for presentation, and
+                JavaScript adds interactivity for dynamic web experiences.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-codepen"></i>
+                <h2>ReactJS</h2>
+                <p>
+                ReactJS is a JavaScript library for building user interfaces,
+                emphasizing component-based architecture for seamless development.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-codepen"></i>
+                <h2>Node.js</h2>
+                <p>
+                Node.js is a runtime environment using JavaScript for server-side
+                applications, known for its efficiency and scalability.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-codepen"></i>
+                <h2>MongoDB</h2>
+                <p>
+                MongoDB is a NoSQL database, storing data in flexible, JSON-like
+                documents, providing scalability and performance.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code-compare"></i>
+                <h2>DSA</h2>
+                <p>
+                DSA, or Data Structures and Algorithms, are fundamental concepts
+                optimizing problem-solving and efficient software development.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code-compare"></i>
+                <h2>Consistency</h2>
+                <p>
+                Consistency is reliability, uniformity, and stability in behavior
+                or performance, essential for trustworthy outcomes.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
             </div>
         </div>
-    </div>
+        </div>
 
+        <!-- projects section design  -->
 
-
-
-
-
-
-    <!-- contact section design  -->
-
-    <div id="contact">
+        <div id="projects">
         <div class="container">
+            <h1
+            id="project-title"
+            data-aos="slide-right"
+            data-aos-duration="4000"
+            data-aos-offset="500"
+            >
+            My <span>Projects</span>
+            </h1>
+            <div class="projects-list" data-aos="slide-up" data-aos-offset="500">
+            <!-- <div>
+                        <video id="videoPlayer" controls>
+                            <source src="/projects/instagramchatapp.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div>
+                        <video id="videoPlayer" controls>
+                            <source src="/projects/instagramchatapp.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div>
+                        <video id="videoPlayer" controls>
+                            <source src="/projects/instagramchatapp.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div>
+                        <video id="videoPlayer" controls>
+                            <source src="/projects/instagramchatapp.mp4" type="video/mp4">
+                        </video>
+                    </div> -->
+
+            <div class="project">
+                <img src="images/project_images/Ultimate Tic Tac Toe.png" />
+                <div class="layer">
+                <h3>Ultimate Tic Tac Toe</h3>
+                <p>
+                    Check out the detailed journey of this project on my LinkedIn
+                    &darr;
+                </p>
+                <a
+                    href="https://www.linkedin.com/posts/aadhar-jain-243a71299_start-date-10-october-2023-ending-date-activity-7128335334844559360-zDcO?utm_source=share&utm_medium=member_desktop"
+                    target="_blank"
+                    ><i class="bx bx-trending-up"></i
+                ></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/project_images/Chatify App.png" />
+                <div class="layer">
+                <h3>Chatify App</h3>
+                <p>
+                    Check out the detailed journey of this project on my LinkedIn
+                    &darr;
+                </p>
+                <a
+                    href="https://www.linkedin.com/posts/aadhar-jain-243a71299_start-date-17-may-2023-ending-date-13-activity-7128263311896268801-iH1A?utm_source=share&utm_medium=member_desktop"
+                    target="_blank"
+                    ><i class="bx bx-trending-up"></i
+                ></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/project_images/Expense Tracker App.png" />
+                <div class="layer">
+                <h3>Expense Tracker App</h3>
+                <p>
+                    Check out the detailed journey of this project on my LinkedIn
+                    &darr;
+                </p>
+                <a
+                    href="https://www.linkedin.com/posts/aadhar-jain-243a71299_start-date-9-april-2023-ending-date-30-activity-7128100352498761728-8mJm?utm_source=share&utm_medium=member_desktop"
+                    target="_blank"
+                    ><i class="bx bx-trending-up"></i
+                ></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/project_images/Registration Form.png" />
+                <div class="layer">
+                <h3>Registration Form</h3>
+                <p>
+                    Check out the detailed journey of this project on my LinkedIn
+                    &darr;
+                </p>
+                <a
+                    href="#https://www.linkedin.com/posts/aadhar-jain-243a71299_start-date-5-january-2023-ending-date-activity-7128095838362304513-p5IT?utm_source=share&utm_medium=member_desktop"
+                    target="_blank"
+                    ><i class="bx bx-trending-up"></i
+                ></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/project_images/Anime-Pics-Generator.png" />
+                <div class="layer">
+                <h3>Anime-Pics-Generator</h3>
+                <p>
+                    Check out the detailed journey of this project on my LinkedIn
+                    &darr;
+                </p>
+                <a
+                    href="https://www.linkedin.com/posts/aadhar-jain-243a71299_start-date-16-august-2022-ending-date-activity-7127703218410655745-uB7F?utm_source=share&utm_medium=member_desktop"
+                    target="_blank"
+                    ><i class="bx bx-trending-up"></i
+                ></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/project_images/Notes App.png" />
+                <div class="layer">
+                <h3>Notes App</h3>
+                <p>
+                    Check out the detailed journey of this project on my LinkedIn
+                    &darr;
+                </p>
+                <a
+                    href="https://www.linkedin.com/posts/aadhar-jain-243a71299_start-date-5-november-2022-ending-date-activity-7127179554724421632-6XSD?utm_source=share&utm_medium=member_desktop"
+                    target="_blank"
+                    ><i class="bx bx-trending-up"></i
+                ></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/project_images/Image Search App.png" />
+                <div class="layer">
+                <h3>Image Search App</h3>
+                <p>
+                    Check out the detailed journey of this project on my LinkedIn
+                    &darr;
+                </p>
+                <a
+                    href="https://www.linkedin.com/posts/aadhar-jain-243a71299_start-date-26-september-2022-ending-date-activity-7127176019651760128-1Ly-?utm_source=share&utm_medium=member_desktop"
+                    target="_blank"
+                    ><i class="bx bx-trending-up"></i
+                ></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/project_images/Snake Game.png" />
+                <div class="layer">
+                <h3>Snake Game</h3>
+                <p>
+                    Check out the detailed journey of this project on my LinkedIn
+                    &darr;
+                </p>
+                <a
+                    href="https://www.linkedin.com/posts/aadhar-jain-243a71299_start-date-22-september-2022-ending-date-activity-7127169386452275200-Dv_p?utm_source=share&utm_medium=member_desktop"
+                    target="_blank"
+                    ><i class="bx bx-trending-up"></i
+                ></a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- contact section design  -->
+
+        <div id="contact">
+        <div class="container" data-aos-offset="300">
             <div class="row">
-                <div class="contact-left">
-                    <h1>Contact <span>Me</span></h1>
-                    <p><i class='bx bx-envelope'></i> aadhar.21bcon631@jecrcu.edu.in</p>
-                    <p><i class='bx bx-phone'></i> 8302346686</p>
+            <div class="contact-left" data-aos="slide-right">
+                <h1>Contact <span>Me</span></h1>
+                <p data-aos="fade-up" data-aos-delay="200"><i class="bx bx-envelope"></i> aadhar.21bcon631@jecrcu.edu.in</p>
+                <p data-aos="fade-up" data-aos-delay="300"><i class="bx bx-phone"></i> 8302346686</p>
 
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/?next=%2F" target="_blank"><i class='bx bxl-instagram' ></i></a>
-                        <a href="https://github.com/aadhar631" target="_blank"><i class='bx bxl-github'></i></a>
-                        <a href="https://www.linkedin.com/in/aadhar-jain-243a71299/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-                    </div>
-
-                    <div class="btn-box">
-                        <a href="/projects/First draft_Aadhar Resume.pdf" download class="btn">Download CV/Resume</a>
-                    </div>
+                <div class="social-icons" data-aos="fade-up" data-aos-delay="400">
+                <a href="https://www.instagram.com/?next=%2F" target="_blank"
+                    ><i class="bx bxl-instagram"></i
+                ></a>
+                <a href="https://github.com/aadhar631" target="_blank"
+                    ><i class="bx bxl-github"></i
+                ></a>
+                <a
+                    href="https://www.linkedin.com/in/aadhar-jain-243a71299/"
+                    target="_blank"
+                    ><i class="bx bxl-linkedin"></i
+                ></a>
                 </div>
 
-
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" id="name" name="Name" placeholder="Enter your name" required>
-                        <input type="email" id="email" name="Email" placeholder="Enter email address" required>
-                        <input type="text" id="subject" name="Subject" placeholder="Subject" required>
-                        <textarea id="message" name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <div class="btn-box">
-                            <button type="submit" class="btn" onclick="sendMail()">Submit</button>
-                        </div>
-                    </form>
-                    <span id="msg"></span>
+                <div class="btn-box" data-aos="fade-up" data-aos-delay="500">
+                <a
+                    href="/projects/First draft_Aadhar Resume.pdf"
+                    download
+                    class="btn"
+                    >Download CV/Resume</a
+                >
                 </div>
+            </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                <input
+                    type="text"
+                    id="name"
+                    name="Name"
+                    placeholder="Enter your name"
+                    required
+                    data-aos="fade-left"
+                    data-aos-delay="100"
+                />
+                <input
+                    type="email"
+                    id="email"
+                    name="Email"
+                    placeholder="Enter email address"
+                    required
+                    data-aos="fade-right"
+                    data-aos-delay="200"
+                />
+                <input
+                    type="text"
+                    id="subject"
+                    name="Subject"
+                    placeholder="Subject"
+                    required
+                    data-aos="fade-left"
+                    data-aos-delay="300"
+                />
+                <textarea
+                    id="message"
+                    name="Message"
+                    rows="6"
+                    placeholder="Your Message"
+                    data-aos="fade-right"
+                    data-aos-delay="400"
+                ></textarea>
+                <div class="btn-box">
+                    <button type="submit" class="btn" onclick="sendMail()" data-aos="zoom-in" data-aos-offset="0" data-aos-delay="500">
+                    Submit
+                    </button>
+                </div>
+                </form>
+                <span id="msg"></span>
+            </div>
             </div>
         </div>
 
-        <div class="copyright">
+        <div class="copyright" data-aos="slide-left" data-aos-offset="0">
             <p>Copyright @ Aadhar. All rights reserved</p>
             <div class="social-icons">
-                <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+            <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
             </div>
         </div>
-    </div>
-    
-    <script src="https://smtpjs.com/v3/smtp.js">
-    </script>
-    <script src="index.js"></script>
-    
-</body>
+        </div>
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init({
+            easing: "ease-in-out",
+        });
+        </script>
+        <script src="index.js"></script>
+    </body>
 </html>
