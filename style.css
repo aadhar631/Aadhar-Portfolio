@@ -705,9 +705,11 @@ nav .fas {
 
 #one-btn{
     display: none;
+    cursor: pointer;
 }
 #two-btn{
     display: none;
+    cursor: pointer;
 }
 #check{
     display: none;
@@ -727,7 +729,7 @@ nav .fas {
     }
     .sidebar{
         display: block;
-        position: absolute;
+        position: fixed;
         width: 20rem;
         background-color: rgb(0, 172, 240, 0.7);
         height: 100vh;
