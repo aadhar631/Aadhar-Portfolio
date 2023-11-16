@@ -142,7 +142,7 @@ span {
 .btn-box {
     position: relative;
     display: flex;
-    width: 35rem;
+    width: auto;
     height: 5rem;
 }
 
