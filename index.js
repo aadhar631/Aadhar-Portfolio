@@ -1,3 +1,25 @@
+// const sr = ScrollReveal({
+//     origin: 'top',
+//     distance: '60px',
+//     duration: 2500,
+//     dealy: 400,
+//     reset: true
+// })
+
+// sr.reveal('.logo', {
+//     origin: 'left',
+//     rotate: {
+//         x: 180,
+//         y: 0,
+//         z: 0
+//     },
+//     reset: false,
+//     scale: 2
+// });
+
+// sr.reveal('.header-text', {origin: 'left',});
+
+
 
 // for the about section tabs
 var tablinks = document.getElementsByClassName("tab-links");
