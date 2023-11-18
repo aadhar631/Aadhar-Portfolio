@@ -44,14 +44,13 @@ body {
     background-position: center;
 }
 
-#header .container img {
+/* #header .container img {
     z-index: -1;
     position: absolute;
-    width: 40vw;
-    height: auto;
-    top: 3vw;
-    left: 55vw;
-}
+    width: 45vw;
+    top: 0vw;
+    left: 50vw;
+} */
 
 
 .container {
@@ -838,20 +837,6 @@ nav .fas {
 
 
 
-@media (max-width: 1115px) {
-    #header .container img {
-        width: 47vw;
-        top: 5vw;
-        left: 50vw;
-    }
-}
-@media (max-width: 1000px) {
-    #header .container img {
-        width: 52vw;
-        top: 7vw;
-        left: 47vw;
-    }
-}
 
 
 
@@ -861,11 +846,6 @@ nav .fas {
 /* media query for about & contact section */
 
 @media (max-width:800px) {
-    #header .container img {
-        width: 60vw;
-        top: 7vw;
-        left: 40vw;
-    }
     .header-text h1 {
         font-size: 4rem;
     }
@@ -904,11 +884,6 @@ nav .fas {
 
 
 @media (max-width:690px) {
-    #header .container img {
-        width: 70vw;
-        top: 13vw;
-        left: 40vw;
-    }
     #header .container {
         padding-top: 6rem;
     }
@@ -926,27 +901,11 @@ nav .fas {
 
 
 
-@media (max-width:590px) {
-    #header .container img {
-        width: 80vw;
-        top: 13vw;
-        left: 35vw;
-    }
-}
-
-
-
-
 
 
 /* media query for about section  */
 
 @media (max-width: 490px) {
-    #header .container img {
-        width: 100vw;
-        top: 17vw;
-        left: 27vw;
-    }
     #header .btn-box .btn{
         width: 10rem;
         height: 4rem;
@@ -969,11 +928,6 @@ nav .fas {
 
 /* media query for skills part  */
 @media (max-width: 440px) {
-    #header .container img {
-        width: 100vw;
-        top: 25vw;
-        left: 27vw;
-    }
     .skills-list div h2 {
         font-size: 2.5rem;
     }
@@ -984,11 +938,7 @@ nav .fas {
 
 
 @media (max-width: 390px) {
-    #header .container img {
-        width: 120vw;
-        top: 30vw;
-        left: 17vw;
-    }
+
     .about-col-2 h1{
         font-size: 4rem;
     }
@@ -1000,15 +950,4 @@ nav .fas {
     .skills-list div h2 {
         font-size: 2rem;
     }    
-}
-
-
-
-
-@media (max-width: 300px) {
-    #header .container img {
-        width: 150vw;
-        top: 35vw;
-        left: 0vw;
-    }
 }
